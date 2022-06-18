@@ -1,0 +1,16 @@
+{
+  "drawingConstants": {
+    "divNumber": 7.0,
+    "width": 100.0,
+    "height": 100.0,
+    "strokeSize": 0.5,
+    "innerRadius": 0.65,
+    "outerRadiusNear": 0.67,
+    "outerRadiusFar": 0.87,
+    "radiusModeNameTextPath": 0.76,
+    "radius_wwhwwwh": 0.96,
+    "chordTextRadius": 0.45,
+    "highlightStrokeSize": 1.2
+  }
+
+}

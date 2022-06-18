@@ -1,0 +1,67 @@
+﻿{
+  "mode": [
+    {
+      "name": "Ionian",
+      "tagline": "The Major Scale",
+      "seventhchord": "Maj7",
+      "accidentals": [ "", "", "", "", "", "", "" ],
+      "tensions": [ "", "", "" ],
+      "primaryColor": "#9cadff",
+      "secondaryColor": "#606b9c"
+    },
+    {
+      "name": "Dorian",
+      "tagline": "Minor, Natural 6",
+      "seventhchord": "min7",
+      "accidentals": [ "", "", "♭", "", "", "", "♭" ],
+      "tensions": [ "", "", "" ],
+      "primaryColor": "#f0aeff",
+      "secondaryColor": "#74557a"
+    },
+    {
+      "name": "Phrygian",
+      "tagline": "Minor, ♭9",
+      "seventhchord": "min7",
+      "accidentals": [ "", "♭", "♭", "", "", "♭", "♭" ],
+      "tensions": [ "♭", "", "♭" ],
+      "primaryColor": "#ffeb87",
+      "secondaryColor": "#ae8d00"
+    },
+    {
+      "name": "Lydian",
+      "tagline": "Major, ♯11",
+      "seventhchord": "Maj7",
+      "accidentals": [ "", "", "", "♯", "", "", "" ],
+      "tensions": [ "", "♯", "" ],
+      "primaryColor": "#ffbc91",
+      "secondaryColor": "#a3460a"
+    },
+    {
+      "name": "Mixolydian",
+      "tagline": "Major, ♭7",
+      "seventhchord": "7",
+      "accidentals": [ "", "", "", "", "", "", "♭" ],
+      "tensions": [ "", "", "" ],
+      "primaryColor": "#aeffb3",
+      "secondaryColor": "#3d8041"
+    },
+    {
+      "name": "Aeolian",
+      "tagline": "The Minor Scale",
+      "seventhchord": "min7",
+      "accidentals": [ "", "", "♭", "", "", "♭", "♭" ],
+      "tensions": [ "", "", "♭" ],
+      "primaryColor": "#ffa198",
+      "secondaryColor": "#99352c"
+    },
+    {
+      "name": "Locrian",
+      "tagline": "The Garbage Scale",
+      "seventhchord": "ø7",
+      "accidentals": [ "", "♭", "♭", "", "♭", "♭", "♭" ],
+      "tensions": [ "♭", "", "♭" ],
+      "primaryColor": "#cccccc",
+      "secondaryColor": "#4a4a4a"
+    }
+  ]
+}

@@ -202,9 +202,9 @@ export function DrawIntervals(svgParams) {
 
     let payload = new Array(7); //final jsx output
     for (let i = 0; i < n; i++) {
-        let x = semiWidth + r * Math.cos(angle * (i + 2.25));
+        let x = semiWidth + r * Math.cos(angle * (i + 2.75));
 
-        let y = semiHeight + r * Math.sin(angle * (i + 2.25));
+        let y = semiHeight + r * Math.sin(angle * (i + 2.75));
         let pushString = <text className={"intervaltext"} x={x} y={y} key={"interval-" + i}> {Step[i]} </text>;
         payload[i] = pushString;
     }

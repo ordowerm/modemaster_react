@@ -150,7 +150,7 @@ export function DrawChordTextPath(svgParams,noteData,primaryId,secondaryId,callb
             </text>;
         }
     }
-    console.log(text);
+//    console.log(text);
     return <>{text}</>;
 }
 

@@ -1,6 +1,6 @@
 import { UserContext } from './UserContext';
 import { useEffect, useState, useContext } from 'react';
-import { MakeGroup, DrawIntervals, DrawSelections } from './ModeWheelHelpers';
+import { MakeGroup, DrawIntervals, DrawSelections, DrawChordTextPath } from './ModeWheelHelpers';
 import { Container } from 'react-bootstrap';
 import '../styles/ModeWheel.css';
 
@@ -45,6 +45,7 @@ function DrawWheel(svgParams,args) {
             <Container id="modewheel-container">
                 <svg viewBox={"0 0 " + localWidth + " " + localHeight} stroke="#000" >
                     {groupJsx}
+                    {DrawChordTextPath(svgParams.drawingConstants, userContext.modeData, userContext.primaryId, userContext.secondaryId, userContext.setSecondary)}
                     {DrawIntervals(svgParams.drawingConstants)}
                     {DrawSelections(userContext, svgParams.drawingConstants)}
                 </svg>
@@ -57,7 +58,7 @@ function DrawWheel(svgParams,args) {
 
 
 //ModeWheel main rendering function
-export default function ModeWheel(props) {
+export default function ModeWheel() {
     const [drawParams, setParams] = useState(null);
     const userContext = useContext(UserContext);
 

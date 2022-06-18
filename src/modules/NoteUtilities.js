@@ -8,7 +8,7 @@
  */
 export default function GetRomanNumeral(modeIndex, chordIndex, primaryAccidentals, chordSeventh) {
     const roman = ["i", "ii", "iii", "iv", "v", "vi", "vii"];
-    const scaleDeg = (modeIndex + chordIndex) % 7;
+    const scaleDeg = (7- modeIndex + chordIndex) % 7;
     let resultString = primaryAccidentals[scaleDeg];
     let resultRoman = roman[scaleDeg];
     switch (chordIndex) {
@@ -20,6 +20,6 @@ export default function GetRomanNumeral(modeIndex, chordIndex, primaryAccidental
         default:
             break;
     }
-    resultString += resultRoman + " " + chordSeventh;
+    resultString += resultRoman + "" + chordSeventh;
     return resultString;
 }

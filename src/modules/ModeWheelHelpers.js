@@ -1,3 +1,4 @@
+import GetRomanNumeral from './NoteUtilities.js';
 
 /*
     This module contains the helper functions used in ModeWheel.js to construct the SVG image. 
@@ -127,19 +128,30 @@ export function DrawModeTextPath(modeName, svgParams,callback) {
  
  
  */
-export function DrawChordTextPath(svgParams) {
-    let text = "";
-    let n = svgParams.divnumber;
-    let angle = 2.0 * Math.PI / n;
-    let r = svgParams.chordradius * svgParams.width / 2.0;
+export function DrawChordTextPath(svgParams,noteData,primaryId,secondaryId,callback) {
+    let text = new Array(7);
+    const n = svgParams.divNumber;
+    const angle = 2.0 * Math.PI / n;
+    const r = svgParams.chordTextRadius * svgParams.width / 2.0;
     let i = 0;
-    for (i = 0; i < n; i++) {
-        text += "<text class=\"chordtext\" id=\"chord-text-" + i.toString() + "\" ";
-        text += "x=\"" + (svgParams.width / 2.0 - r * Math.cos(7.0 * angle / 4.0 + angle * (i))).toString() + "\" ";
-        text += "y=\"" + (svgParams.height / 2.0 - r * Math.sin(7.0 * angle / 4.0 + angle * (i))).toString() + "\" >";
-        // text += GetRoman(0, i) + SeventhChords[i] + "</text>";
+    if (
+        noteData != null &&
+        noteData[primaryId] != null //&&
+        //noteData[secondaryId] != null &&
+        //'seventhchord' in noteData[secondaryId]
+
+     ) {
+        for (i = 0; i < n; i++) {
+            const fixedIndex = i;
+            text[i] = <text className="chordtext" id={"chord-text-" + i.toString()} key={"chord-text-" + i}
+                x={(svgParams.width / 2.0 - r * Math.cos(7.0 * angle / 4.0 + angle * (i))).toString()}
+                y={(svgParams.height / 2.0 - r * Math.sin(7.0 * angle / 4.0 + angle * (i))).toString()} onClickCapture={() => { callback(fixedIndex) }} >
+                {GetRomanNumeral(primaryId, fixedIndex, noteData[primaryId].accidentals, noteData[fixedIndex].seventhchord)}
+            </text>;
+        }
     }
-    return text;
+    console.log(text);
+    return <>{text}</>;
 }
 
 

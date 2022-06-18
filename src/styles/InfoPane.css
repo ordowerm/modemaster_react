@@ -27,16 +27,17 @@
 #mode-note-row {
     --bs-gutter-x: 0;
     font-size: 0.8em;
-    align-content:center;
+    justify-content:center;
     text-align:center;
 }
 
 .note-col {
     min-width: 2ch;
-    max-width: 20%;
+    max-width: 6ch;
 }
 
 #mode-name {
+    font-size:0.9em;
     text-align:center;
 }
 

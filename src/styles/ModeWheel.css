@@ -1,14 +1,16 @@
+/* General Sizing Properties for the pseudofragment containing the Mode Wheel */
 #modewheel-container {
     width: auto;
     height: auto;
     margin-top: 3vh;
+    margin-bottom: 3vh;
     max-height: 80vw;
     max-width: 10cm;
     margin-left:auto;
     margin-right:auto;
 }
 
-
+/* Styling for the outer part of the wheel, where it displays the name of the mode being used */
 .textpath-mode-text {
     font-size: 0.31em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -25,6 +27,8 @@
     fill: none;
 }
 
+
+/* Styling for the part of the mode wheel where it says WWHWWWH */
 .intervaltext {
     font-size: 0.25em;
     text-anchor: middle;
@@ -36,6 +40,8 @@
     user-select:none;
 }
 
+
+/* Styling for the part where it displays the 7th chords */
 .chordtext {
     font-size: 0.24em;
     text-anchor: middle;
@@ -47,12 +53,29 @@
     user-select: none;
 }
 
-#outer-path-selected{
-    stroke:white;
-    stroke-width:2;
-}
-
-#inner-path-selected {
+/* Styling for the selected arcs. */
+.selection-path {
     stroke: white;
     stroke-width: 2;
+}
+
+
+
+/* Modewheel Animation Components */
+
+/* Alter opacity of strokes */
+@keyframes fade-animation {
+    0% 
+    {
+        stroke-opacity:1;
+    }
+    25% 
+    {
+        stroke-opacity: 1;
+    }
+    100% 
+    {
+        stroke-opacity:0;
+    }
+  
 }

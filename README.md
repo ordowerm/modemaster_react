@@ -26,7 +26,7 @@ Single-page, React-based web application using functional components.
 2. Using the Fetch API to access constants
 
 ### - Programmatic Generation of SVG Image:
-Instead of hardcoding the image and then passing in callbacks through the DOM (which is probably the 'smart' way to accomplish this), I thought it would be fun to generate the image programmatically. If I want to reuse the code to programmatically generate some other shape down the line, it'll be useful, too.
+- Instead of hardcoding the image and then passing in callbacks through the DOM (which is probably the 'smart' way to accomplish this), I thought it would be fun to generate the image programmatically. If I want to reuse the code to programmatically generate some other shape down the line (e.g. a lesson on fractions for my math students), it'll be useful, too.
 
 ### - Using the Fetch API to Access Constants:
 - There's no practical reason to do this, as far as I can tell, since it forces me to do extra error checking, adds overhead, and parses JSON unnecessarily. 

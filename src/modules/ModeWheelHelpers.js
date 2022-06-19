@@ -166,7 +166,7 @@ function DrawSingleSelection(num, data, callback) {
     const offset = 360 / (2.0 * n);//(Math.PI/2.0-Math.PI/n)*360/(2*Math.PI); //offset angle to center transformation group
     if (data) {
         return (
-            <g id={"outer-selection-group"} transform={("translate(" + (data.width / 2.0).toString() + "," + -(data.height / 2.0).toString() + ") rotate(" + ((offset - 90.0) + num * offset * 2.0).toString() + " 0 " + (data.height).toString() + ")")}>
+            <g className={"selection-path"} id={"outer-selection-group"} transform={("translate(" + (data.width / 2.0).toString() + "," + -(data.height / 2.0).toString() + ") rotate(" + ((offset - 90.0) + num * offset * 2.0).toString() + " 0 " + (data.height).toString() + ")")}>
                 {callback}
             </g>
         );

@@ -14,7 +14,7 @@ As of 6/22/22, the page is currently live at https://modemaster.herokuapp.com .
 - WebApp instead of iOS or Android-specific applications -- this allows for cross-platform portability
 - Based on my friend's guitar notes, which are enclosed in the design-docs folder.
 - During the design process, I prioritized certain usability criteria outlined in the Nielsen Group's list of usability heuristics. 
-- As an educational exercise, I included some "extra" or "unnecessary" design decisions, detailed below:
+- As an educational exercise, I included some "extra" or "unnecessary" design decisions, [detailed below](## "Gratuitous Stuff"):
 
 ---
 ## Usability Considerations:

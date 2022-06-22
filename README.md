@@ -35,7 +35,7 @@ As of 6/22/22, the page is currently live at https://modemaster.herokuapp.com .
 ### - Using the Fetch API to Access Constants:
 - There's no practical reason to do this, as far as I can tell, since it forces me to do extra error checking, adds overhead, and parses JSON unnecessarily. 
 - With that said, some jobs I'm applying to want me to know how to use REST API, and this is a reasonable facsimile of it. I use the Fetch API just to prove that I know how to consume JSON-formatted RESTful API.
-
+---
 ## To Do:
 - Add instructions for how to use --> for usability, potentially store whether they've already seen the "how to use" section as a cookie, so that they don't have to revisit it every time?
 - Continue to fine-tune formatting/styling (text size, etc.)

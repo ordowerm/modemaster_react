@@ -11,10 +11,10 @@ import GetRomanNumeral from './NoteUtilities.js';
 /*
   Prints scale degrees + accidentals within primary mode.
  */
-export function GetNotesString(accidentals) {
+export function GetNotesString(accidentals,notes) {
     let result = [];
     for (let i = 0; i < accidentals.length; i++) {
-        result.push(accidentals[i] + (i + 1).toString());
+        result.push(accidentals[i] + notes[i]);
     }
     return result;
 }
@@ -40,7 +40,7 @@ export function TopRow(primaryData) {
 
                 <Row id="mode-note-row" >
 
-                    {GetNotesString(primaryData.accidentals).map((item) =>
+                    {GetNotesString(primaryData.accidentals,primaryData.noteIds).map((item) =>
                         <Col className={"note-col"} key={"Note" + item}>{item}</Col>
                     )}
 

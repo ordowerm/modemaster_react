@@ -4,12 +4,13 @@ import { useRef,useEffect,useState} from "react";
 import ModeWheel from './ModeWheel';
 import InfoPane from './InfoPane';
 import { UserContext } from './UserContext';
-
+import { testKeys } from './NoteUtilities';
 
 
 const modeDataUri = "./constants/modeData.json"
 
 function App() {
+    testKeys();
     const [primaryId,setPrimaryId] = useState(0);
     const [secondaryId,setSecondaryId] = useState(0);
     const bodyTagRef = useRef(document.getElementsByTagName("html")[0]);

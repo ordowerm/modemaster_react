@@ -1,11 +1,10 @@
 ﻿{
   "mode": [
     {
-      "name": "Ionian",
-      "tagline": "The Major Scale",
-      "seventhchord": "Maj7",
-      "accidentals": [ "", "", "", "", "", "", "" ],
-      "noteIds": ["1","2","3","4","5","6","7"],
+      "name": "Harmonic Minor",
+      "tagline": "Aeolian ♯7 ",
+      "seventhchord": "minᴹᵃʲ⁷",
+      "accidentals": [ "", "", "♭", "", "", "♭", "" ],
       "tensions": [ "", "", "" ],
       "primaryColor": "#9cadff",
       "secondaryColor": "#606b9c"
@@ -15,7 +14,6 @@
       "tagline": "Minor, Natural 6",
       "seventhchord": "min7",
       "accidentals": [ "", "", "♭", "", "", "", "♭" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
       "tensions": [ "", "", "" ],
       "primaryColor": "#f0aeff",
       "secondaryColor": "#74557a"
@@ -25,7 +23,6 @@
       "tagline": "Minor, ♭9",
       "seventhchord": "min7",
       "accidentals": [ "", "♭", "♭", "", "", "♭", "♭" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
       "tensions": [ "♭", "", "♭" ],
       "primaryColor": "#ffeb87",
       "secondaryColor": "#ae8d00"
@@ -35,7 +32,6 @@
       "tagline": "Major, ♯11",
       "seventhchord": "Maj7",
       "accidentals": [ "", "", "", "♯", "", "", "" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
       "tensions": [ "", "♯", "" ],
       "primaryColor": "#ffbc91",
       "secondaryColor": "#a3460a"
@@ -45,18 +41,16 @@
       "tagline": "Major, ♭7",
       "seventhchord": "7",
       "accidentals": [ "", "", "", "", "", "", "♭" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
       "tensions": [ "", "", "" ],
       "primaryColor": "#aeffb3",
       "secondaryColor": "#3d8041"
     },
     {
-      "name": "Aeolian",
-      "tagline": "The Minor Scale",
-      "seventhchord": "min7",
-      "accidentals": [ "", "", "♭", "", "", "♭", "♭" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
-      "tensions": [ "", "", "♭" ],
+      "name": "Harmonic Minor",
+      "tagline": "Aeolian ♯7 ",
+      "seventhchord": "minᴹᵃʲ⁷",
+      "accidentals": [ "", "", "♭", "", "", "♭", "" ],
+      "tensions": [ "", "", "" ],
       "primaryColor": "#ffa198",
       "secondaryColor": "#99352c"
     },
@@ -65,7 +59,6 @@
       "tagline": "The Garbage Scale",
       "seventhchord": "ø7",
       "accidentals": [ "", "♭", "♭", "", "♭", "♭", "♭" ],
-      "noteIds": [ "1", "2", "3", "4", "5", "6", "7" ],
       "tensions": [ "♭", "", "♭" ],
       "primaryColor": "#cccccc",
       "secondaryColor": "#4a4a4a"

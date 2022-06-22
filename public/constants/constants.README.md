@@ -84,6 +84,11 @@ highlightStrokeSize:
 
   :  This is used for displaying accidentals in the InfoPane, as well as chords in the ModeWheel.
 
+  noteIds:
+  : Array of 7 strings, each corresponding to a note in the scale OR a scale degree.
+  :  This field exists for extensibility purposes while I'm still deciding on how to organize the data.
+  :  I might replace it with programmatic generation of note names, as opposed to storing that data in a JSON array. 
+
   tensions:
   : Array of 3 strings, each corresponding to whether an accidental should be applied at the 9th, 11th, and 13th scale degree, in order. 
   : Technically, I could just access the 2nd, 4th, and 6th scale degrees from the accidentals field to accomplish this. That might be a fun way to show off array destructuring in React or something. I'll consider refactoring.
@@ -94,3 +99,14 @@ highlightStrokeSize:
 
   secondaryColor:
   :  A darker version of the color associated with the mode currently selected. The entire app's background should be set to this color when a user selects a mode.
+
+  ---
+
+## harmonicModeData.json:
+
+- Same as modeData.json, but with mode names and constants corresponding to the harmonic minor scale.
+
+---
+
+## majorKeys.json:
+- File I'm using for scratchwork while designing the API for an expanded version of the app.

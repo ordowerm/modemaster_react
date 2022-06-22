@@ -3,7 +3,11 @@
 ## Project Overview:
 Single-page, React-based web application using functional components.
 - Designed as a reference for musicians (especially guitarists) learning about the diatonic/Hellenic modes.
-- Inspired by a guitar-teacher friend who wanted to convert his teaching notes into a mobile-friendly format.
+- Inspired by a guitar-teacher friend who wanted to convert his [teaching notes](./design-docs/client_sketches) into a mobile-friendly format.
+
+As of 6/22/22, the page is currently live at https://modemaster.herokuapp.com .
+
+
 ---
 ## Design Methodology:
 - Mobile-first / Responsive design
@@ -31,3 +35,12 @@ Single-page, React-based web application using functional components.
 ### - Using the Fetch API to Access Constants:
 - There's no practical reason to do this, as far as I can tell, since it forces me to do extra error checking, adds overhead, and parses JSON unnecessarily. 
 - With that said, some jobs I'm applying to want me to know how to use REST API, and this is a reasonable facsimile of it. I use the Fetch API just to prove that I know how to consume JSON-formatted RESTful API.
+
+## To Do:
+- Add instructions for how to use --> for usability, potentially store whether they've already seen the "how to use" section as a cookie, so that they don't have to revisit it every time?
+- Continue to fine-tune formatting/styling (text size, etc.)
+- Potentially add animations
+- Extend app to accommodate Harmonic Minor modes
+- Gradually extend app to accommodate specific key signatures --> may require substantial refactoring. First need to decide whether I should programmatically generate that content or use a database.
+- Add menu to provide user access to extended features
+- Possibly allow for landscape orientation for certain resolutions?

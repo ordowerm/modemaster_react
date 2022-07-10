@@ -21,7 +21,7 @@ As of 6/22/22, the page is currently live at https://modemaster.herokuapp.com .
 - Minimalism - the only interactive component is the wheel itself
 - Visible system status - selected elements are highlighted, and the app's color scheme updates across multiple view elements to match
 - User control - reversing the app to a previous state is as simple as clicking on the previously-highlighted element.
-- Recognition > Recall - the highlit elements of the wheel, combined with the symmetry of the wheel's design cues the reader to how to use the app. Corresponding information is appropriately labeled, assuming that the user matches the app's demographic.
+- Recognition > Recall - the highlighted elements of the wheel, combined with the symmetry of the wheel's design cues the reader to how to use the app. Corresponding information is appropriately labeled, assuming that the user matches the app's demographic.
 - Help & Documentation - this MVP doesn't include a help page, nor does it include the animations I hope to add later; however, the simplicity of its design, combined with reversible controls, means that a user can figure out how to use the app just by experimenting.
 
 ---

@@ -5,7 +5,7 @@ Single-page, React-based web application using functional components.
 - Designed as a reference for musicians (especially guitarists) learning about the diatonic/Hellenic modes.
 - Inspired by a guitar-teacher friend who wanted to convert his [teaching notes](./design-docs/client_sketches) into a mobile-friendly format.
 
-As of 6/22/22, the page is currently live at https://modemaster.herokuapp.com .
+As of 10/24/2024, the page is no longer live.
 
 
 ---
